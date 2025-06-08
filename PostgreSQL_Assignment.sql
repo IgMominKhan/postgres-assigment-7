@@ -1,6 +1,6 @@
 -- Active: 1745789994448@@127.0.0.1@5432@bookstore_db
 
--- 1. Create a "books" table.
+-- Create a "books" table.
 
 CREATE TABLE books (
     id INT PRIMARY KEY UNIQUE,
@@ -11,7 +11,7 @@ CREATE TABLE books (
     published_year SMALLINT check (published_year >= 0)
 );
 
--- 2. Create a "customers" table.
+-- Create a "customers" table.
 CREATE TABLE customers (
     id INT PRIMARY KEY UNIQUE,
     name VARCHAR(50) NOT NULL,
